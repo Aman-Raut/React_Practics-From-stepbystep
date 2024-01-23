@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import {useState} from 'react'
 import './App.css';
+import Fun from './Fun';
+import Student from './Student'
+import Input from './Input'
+import Toggle from './Toggle'
+import Form from './Form';
+
 
 function App() {
+const [data,setData]= useState(0)
+
+function updateData(){
+  setData(data+1)
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Student name={"Aman"} Email ={"amanraut13@gmail.com "} />
+      <Student name ={"Manu"} />
+      <h1>{data} </h1>
+      <button onClick={updateData}>Tap to add</button>
+      <Input />
+      <Toggle />
+      <Form />
     </div>
-  );
+  )
 }
 
 export default App;
