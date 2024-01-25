@@ -5,6 +5,7 @@ import Student from './Student'
 import Input from './Input'
 import Toggle from './Toggle'
 import Form from './Form';
+import Login from './Login';
 
 
 function App() {
@@ -23,6 +24,8 @@ function updateData(){
       <Input />
       <Toggle />
       <Form />
+      <Login />
+
     </div>
   )
 }
