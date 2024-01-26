@@ -6,10 +6,12 @@ import Input from './Input'
 import Toggle from './Toggle'
 import Form from './Form';
 import Login from './Login';
+import User from './User'
 
 
 function App() {
-const [data,setData]= useState(0)
+const [data,setData]= useState(0);
+const[name,setName] = useState("Aman")
 
 function updateData(){
   setData(data+1)
@@ -25,7 +27,8 @@ function updateData(){
       <Toggle />
       <Form />
       <Login />
-
+      <User name={name} />
+      <button onClick={()=>setName("Aman Raut")}>Update Name</button>
     </div>
   )
 }
