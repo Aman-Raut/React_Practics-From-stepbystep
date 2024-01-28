@@ -7,6 +7,8 @@ import Toggle from './Toggle'
 import Form from './Form';
 import Login from './Login';
 import User from './User'
+import Effect from './Effect';
+import Map from './Map'
 
 
 function App() {
@@ -27,8 +29,10 @@ function updateData(){
       <Toggle />
       <Form />
       <Login />
+      <Effect />
       <User name={name} />
       <button onClick={()=>setName("Aman Raut")}>Update Name</button>
+      <Map />
     </div>
   )
 }
