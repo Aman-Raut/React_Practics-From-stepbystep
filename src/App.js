@@ -10,6 +10,7 @@ import User from './User'
 import Effect from './Effect';
 import Map from './Map';
 import Cont from './Cont';
+import HighOrderCnt from './HighOrderCnt';
 
 
 function App() {
@@ -35,6 +36,7 @@ function updateData(){
       <button onClick={()=>setName("Aman Raut")}>Update Name</button>
       <Map />
       <Cont />
+      <HighOrderCnt />
     </div>
   )
 }
