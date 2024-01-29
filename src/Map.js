@@ -6,7 +6,7 @@ function Map(){
 const users = [
     {name: 'Aman', email: 'aman@gmail.com', contact:'987'},
     {name: 'Pranjal', email: 'pranjal@gmail.com', contact:'876'},
-    {name: 'Deep', email: 'deep@gmail.com', contact:'678'},
+    {name: 'Amandeep', email: 'deep@gmail.com', contact:'678'},
     {name: 'guru', email: 'guru@gmail.com', contact:'567'},
 
 ]

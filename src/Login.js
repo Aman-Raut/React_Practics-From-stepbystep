@@ -9,7 +9,7 @@ function Login(){
 
     function loginHandle(e){
 
-        (user || password <3)?
+        (user || password < 3)?
         alert(" please type correct values")
         : alert("All good")
 
@@ -18,7 +18,7 @@ function Login(){
 
     function userHandler(e){
         let item = e.target.value;
-        item.length<3?
+        (item.length<3)?
         setUserErr(true):
         setUserErr(false)
 

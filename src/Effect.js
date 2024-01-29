@@ -8,7 +8,7 @@ function Effect(){
     })
     return(
         <div>
-            <h1>meow {count}</h1>
+            <h1> meow {count}</h1>
             <button onClick={()=>setCount(count+1)}>Meow</button>
         </div>
     )

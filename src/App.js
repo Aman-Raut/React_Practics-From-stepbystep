@@ -8,7 +8,8 @@ import Form from './Form';
 import Login from './Login';
 import User from './User'
 import Effect from './Effect';
-import Map from './Map'
+import Map from './Map';
+import Cont from './Cont';
 
 
 function App() {
@@ -33,6 +34,7 @@ function updateData(){
       <User name={name} />
       <button onClick={()=>setName("Aman Raut")}>Update Name</button>
       <Map />
+      <Cont />
     </div>
   )
 }
